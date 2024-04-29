@@ -13,6 +13,7 @@
 }
 
 .box {
+
     width: 400px;
     height: 400px;
 
@@ -23,6 +24,35 @@
     display: flex;
 
 }
+
+.invisible {
+
+    background-image: linear-gradient(to top right,yellow,purple);
+    border-radius: 50%;
+    box-shadow: inset 2px 2px 50px white;
+
+    color: white;
+    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+
+    animation: invisible 2s infinite 2s;
+
+}
+
+@keyframes invisible {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    to {
+        opacity: 0;
+        transform: scale(0);
+    }
+}
+
 
 .text {
     font-family: Georgia, 'Times New Roman', Times, serif;
